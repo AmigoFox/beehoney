@@ -37,7 +37,7 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
         message: message
     };
 
-    emailjs.send('service_8uqeu47', 'template_la9ptwj', templateParams) // Замените на ваш Service ID и Template ID
+    emailjs.send('NMvqxvmuH1LvzRBNaV-ck', 'husL8zOcDy95XFJkK', templateParams) // Замените на ваш Service ID и Template ID
         .then(function(response) {
             Swal.fire({
                 title: 'Успех!',
