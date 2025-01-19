@@ -1,0 +1,133 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #EBEBEB;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bg_for_menu {
+    width: 100%;
+    background: #242424;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #8a8a8a;
+}
+
+/* Форма */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+button {
+    background-color: #242424;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Кнопка на всю ширину */
+}
+
+button:hover {
+    background-color: #8a8a8a;
+}
+
+/* Контейнер */
+.grid-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 767px) {
+    .menu {
+        flex-direction: column; /* Меню в столбец на мобильных */
+    }
+
+    .menu a {
+        margin: 5px 0; /* Отступы между пунктами меню */
+    }
+
+    .grid-container {
+        padding: 10px; /* Уменьшаем отступы на мобильных */
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer {
+    background-color: #242424;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer__center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer__block {
+    background-color: #EBEBEB;
+    color: #000000;
+    padding: 10px;
+}
+
+.footer__line {
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,147 @@
+/* Общие стили */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #EBEBEB;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Меню */
+.bg_for_menu {
+    width: 100%;
+    background: #242424;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background: #8a8a8a;
+}
+
+/* Грид-контейнер */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Две колонки: основная и боковая */
+    gap: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.column {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Таблица */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #242424;
+    color: white;
+}
+
+/* Футер */
+footer {
+    background-color: #242424;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-wrp {
+    background-color: #EBEBEB;
+    color: #000000;
+    padding: 10px;
+}
+
+.footer-wrp hr {
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-center {
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-left: 4px solid orange;
+    border-radius: 4px;
+}
+
+.benefits-list h3 {
+    margin-top: 0;
+    color: #242424;
+}
+
+.benefits-list p {
+    margin: 10px 0 0;
+    color: #555;
+}

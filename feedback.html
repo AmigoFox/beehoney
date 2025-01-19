@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+    <title>Контакты</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Меню -->
+    <div class="bg_for_menu">
+        <div class="wrapper">
+            <nav class="menu">
+                <a href="main_index.html">Главная</a>
+                <a href="Our_products.html">Каталог меда</a>
+                <a href="feedback.html">Контакты</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Форма обратной связи -->
+    <div class="grid-container">
+        <h1>Обратная связь</h1>
+        <p>Мы всегда рады услышать ваше мнение! Если у вас есть вопросы, предложения или отзывы, пожалуйста, заполните форму ниже. Мы постараемся ответить вам как можно скорее.</p>
+        <form id="feedback-form" novalidate>
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Например, Иван Иванов">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required placeholder="Например, example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Напишите ваше сообщение здесь..."></textarea>
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__center">
+            <div class="footer__block">
+                <h2 class="footer__title">О нас</h2>
+                <p class="footer__text">Мы занимаемся пчеловодством уже более 20 лет. Наш мед — это натуральный продукт, собранный в экологически чистых регионах.</p>
+                <hr class="footer__line">
+            </div>
+
+            <div class="footer__block">
+                <h2 class="footer__title">Контакты</h2>
+                <p class="footer__text">Телефон: +7 (123) 456-78-90</p>
+                <p class="footer__text">Email: info@beehoney.com</p>
+                <hr class="footer__line">
+            </div>
+
+            <div class="footer__block">
+                <h2 class="footer__title">Социальные сети</h2>
+                <p class="footer__text">Следите за нами в социальных сетях, чтобы быть в курсе новостей и акций.</p>
+                <hr class="footer__line">
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            www.beehoney.com &copy; 2023. Все права защищены.
+        </div>
+    </footer>
+
+
+    <!-- Подключение JavaScript -->
+    <script src="feedback.js"></script>
+</body>
+</html>
