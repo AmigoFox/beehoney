@@ -1,10 +1,8 @@
-// Инициализация EmailJS
 emailjs.init("husL8zOcDy95XFJkK");
 
 document.getElementById('feedback-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Отключаем стандартное поведение формы
 
-    // Получаем данные из формы
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
