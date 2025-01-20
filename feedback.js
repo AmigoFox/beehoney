@@ -9,16 +9,16 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // Очистка предыдущих ошибок
+
     clearErrors();
 
-    // Проверка имени
+
     if (!name) {
         showError(document.getElementById('name'), "Поле 'Имя' обязательно для заполнения.");
         return;
     }
 
-    // Проверка email
+
     if (!email) {
         showError(document.getElementById('email'), "Поле 'Email' обязательно для заполнения.");
         return;
@@ -27,13 +27,13 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
         return;
     }
 
-    // Проверка сообщения
+
     if (!message) {
         showError(document.getElementById('message'), "Поле 'Сообщение' обязательно для заполнения.");
         return;
     }
 
-    // Если все проверки пройдены, отправляем данные через EmailJS
+
     const templateParams = {
         from_name: name,
         from_email: email,
@@ -67,13 +67,12 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
         });
 });
 
-// Функция для проверки email
+
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
 
-// Функция для вывода ошибки
 function showError(element, message) {
     const errorElement = document.createElement('div');
     errorElement.className = 'error-message';
